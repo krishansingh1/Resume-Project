@@ -46,7 +46,7 @@ body {
 
 #name-social-container {
   text-align: center;
-  margin-top: 20vh;
+  margin-top: 24vh;
 }
 
 #my-name {
@@ -65,4 +65,32 @@ body {
 
 .social-icons li a i:hover {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+/*About*/
+#about {
+  height: auto;
+  width: 100%;
+}
+#my-image {
+  width: 12rem;
+  height: 12rem;
+  margin: auto;
+  margin-top: -14vh;
+}
+#my-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  position: relative;
+  border: 3px solid white;
+  box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+#data {
+  margin-top: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  word-spacing: 0.5rem;
+  margin-right: 10rem;
 }
