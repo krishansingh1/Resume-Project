@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+/*Header*/
+#resume-header {
+  height: 65vh;
+  background-image: url("https://ninjasfiles.s3.amazonaws.com/asset_0000000000000020_1549743985_macbook_mouse.jpg");
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  margin-top: 9rem;
+  font-size: 3rem;
+}
+
+/*Navigation*/
+.horizontal-list {
+  text-align: center;
+}
+
+.horizontal-list li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 2rem 8px;
+}
+
+.horizontal-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-list{
+    font-size: 0.9rem;
+}
+
+#
