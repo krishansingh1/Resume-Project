@@ -88,8 +88,11 @@ body {
 }
 
 #content {
-  text-align: center;
+  /* text-align: center; */
   margin-top: 2rem;
-  width: 70%;
+  width: 68%;
   margin-left: 15%;
+  word-spacing: 0.4rem;
+  line-height: 1.5;
+  align-content: center;
 }
