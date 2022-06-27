@@ -87,11 +87,13 @@ body {
   box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
 }
 
+.mb75 {
+  margin-bottom: 75px;
+}
+
 #content {
-  text-align: center;
   margin: 0 auto;
   margin-top: 2rem;
-  margin-bottom: 5rem;
   color: grey;
   width: 75%;
   font-size: 1.2rem;
@@ -106,9 +108,10 @@ body {
 
 section {
   width: 100%;
-  height: 60vh;
+  height: 66vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 section:nth-child(2n) {
@@ -124,10 +127,16 @@ section:nth-child(2n + 1) {
 .section-heading {
   color: #2857a4;
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 2.5rem;
   margin: 0 auto;
+  font-weight: 100;
+  margin-top: 4rem;
 }
 
-.section-heading span{
+.section-heading span {
   margin-right: 15px;
+}
+
+.skills-display{
+  
 }
