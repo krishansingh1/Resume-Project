@@ -159,8 +159,7 @@ section:nth-child(2n + 1) {
 
 .skills-progress > div {
   border-radius: 20px 0px 0px 20px;
-  box-shadow: 0px 0px 10px black;
-  clip-path: inset(0px -15px 0px 0px);
+  box-shadow: 15px 0px 20px -10px rgba(0,0,0,0.75);
 }
 .mb-blue {
   background-color: #2857a4;
