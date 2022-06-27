@@ -143,16 +143,18 @@ section:nth-child(2n + 1) {
 
 .skills-display {
   width: 70%;
+  height: 50%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .skills-progress {
   background-color: lightgrey;
-  width: 8rem;
-  height: 1.7rem;
+  width: 10rem;
+  height: 2rem;
   border-radius: 0.8rem;
+  margin-left: 4rem;
 }
 
 .skills-progress > div {
@@ -162,7 +164,7 @@ section:nth-child(2n + 1) {
   background-color: #2857a4;
 }
 
-.eighty-five-percent {
+.fifty-percent {
   width: 50%;
   height: inherit;
 }
@@ -172,5 +174,42 @@ section:nth-child(2n + 1) {
   font-size: 1rem;
   margin-left: 10px;
   position: relative;
-  top: 5px;
+  top: 7px;
+}
+
+.ninty-percent {
+  width: 90%;
+  height: inherit;
+}
+
+.mb-orange {
+  background-color: #ec4d1c;
+}
+
+.sixty-percent {
+  width: 60%;
+  height: inherit;
+}
+
+.mb-grape {
+  background-color: #93738c;
+}
+
+.ninty-percent {
+  width: 90%;
+  height: inherit;
+}
+
+.mb-green {
+  background-color: #0b8176;
+}
+
+.forty-percent {
+  width: 50%;
+  height: inherit;
+}
+
+.seventy-percent {
+  width: 70%;
+  height: inherit;
 }
