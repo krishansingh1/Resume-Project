@@ -120,7 +120,7 @@ section:nth-child(2n) {
 
 section:nth-child(2n + 1) {
   background-color: white;
-}
+} 
 
 /*Skills section*/
 
@@ -137,6 +137,30 @@ section:nth-child(2n + 1) {
   margin-right: 15px;
 }
 
-.skills-display{
-  
+.mb75 {
+  margin-bottom: 75px;
+}
+
+.skills-display {
+  width: 70%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.skills-progress {
+  background-color: lightgrey;
+  width: 7rem;
+  height: 1.4rem;
+  border-radius: 0.8rem;
+  border: 1px solid black;
+}
+
+.mb-blue{
+  background-color: #2857a4;
+}
+
+.eighty-five-percent{
+  width:85%;
+  height: inherit;
 }
