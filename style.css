@@ -359,3 +359,8 @@ hr {
 .space span >i{
   padding-right: 1rem;
 }
+
+.contact-social li a i{
+  margin-left: 2rem;
+  font-size: 1.3rem;
+}
