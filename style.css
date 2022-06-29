@@ -342,3 +342,20 @@ hr {
   width: 40%;
   color: white;
 }
+
+.gap{
+  margin-bottom: 1.2rem;
+}
+
+.gap:nth-child(2){
+   font-size: 0.9rem;
+   color: lightgray;
+}
+
+.space span:nth-child(2){
+  color: lightgray;
+}
+
+.space span >i{
+  padding-right: 1rem;
+}
