@@ -304,6 +304,11 @@ form input {
   background: none;
   font-size: 17px;
   margin: 7px;
+  outline: none;
+}
+
+form input:focus {
+  color: white;
 }
 form input::placeholder {
   color: white;
@@ -317,12 +322,17 @@ hr {
   margin-bottom: 2rem;
 }
 
+form textarea:focus {
+  color: white;
+}
+
 .text-area {
   background: none;
   margin-left: 7px;
   font-size: 18px;
   border: none;
   width: 116%;
+  outline: none;
 }
 
 .form-btn {
@@ -343,24 +353,24 @@ hr {
   color: white;
 }
 
-.gap{
+.gap {
   margin-bottom: 1.2rem;
 }
 
-.gap:nth-child(2){
-   font-size: 0.9rem;
-   color: lightgray;
-}
-
-.space span:nth-child(2){
+.gap:nth-child(2) {
+  font-size: 0.9rem;
   color: lightgray;
 }
 
-.space span >i{
+.space span:nth-child(2) {
+  color: lightgray;
+}
+
+.space span > i {
   padding-right: 1rem;
 }
 
-.contact-social li a i{
+.contact-social li a i {
   margin-left: 2rem;
   font-size: 1.3rem;
 }
