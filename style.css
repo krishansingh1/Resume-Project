@@ -340,6 +340,12 @@ form textarea:focus {
   text-transform: uppercase;
   margin-left: 45%;
   margin-top: 0.8rem;
+  cursor: pointer;
+}
+
+.form-btn:hover{
+  background-color: white;
+  color: #2857a4;
 }
 
 #info {
