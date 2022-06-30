@@ -262,7 +262,7 @@ section:nth-child(2n + 1) {
   font-size: 2rem;
 }
 
-.portfolio-details p{
+.portfolio-details p {
   margin-top: 25%;
 }
 
@@ -343,7 +343,7 @@ form textarea:focus {
   cursor: pointer;
 }
 
-.form-btn:hover{
+.form-btn:hover {
   background-color: white;
   color: #2857a4;
 }
