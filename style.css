@@ -237,13 +237,15 @@ section:nth-child(2n + 1) {
   border: 2px solid black;
 }
 
-/* .timeline-box:nth-child(2n + 1) {
-} */
-
 .timeline-box:nth-child(2n) {
   left: 53%;
 }
 
+.timeline-divider {
+  border-top: 2px dashed #74adc8;
+  position: absolute;
+  
+}
 /*Portfolio Section*/
 
 .section-heading span:nth-child(2) {
