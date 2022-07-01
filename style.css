@@ -225,7 +225,7 @@ section:nth-child(2n + 1) {
 .timeline {
   position: relative;
   width: 75%;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
 .timeline-box {
@@ -237,8 +237,8 @@ section:nth-child(2n + 1) {
   border: 2px solid black;
 }
 
-.timeline.box:nth-child(2n) {
-  left: 10%;
+.timeline-box:nth-child(2n) {
+  left: 50%;
 }
 
 /*Portfolio Section*/
