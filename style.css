@@ -230,10 +230,15 @@ section:nth-child(2n + 1) {
 
 .timeline-box {
   position: relative;
+  margin: 5px;
   width: 40%;
   left: 5%;
   min-height: 150px;
   border: 2px solid black;
+}
+
+.timeline.box:nth-child(2n) {
+  left: 10%;
 }
 
 /*Portfolio Section*/
