@@ -242,15 +242,20 @@ section:nth-child(2n + 1) {
 }
 
 .timeline-divider {
-  border-top: 2px dashed #74adc8;
   position: absolute;
-  width: 70%;
-  z-index: 1;
+  height: 75%;
+  width: 0;
+  top: 10%;
+  left: 50%;
+  border: 3px dashed #74adc8;
 }
 
-.timeline-divider i {
-  position: absolute;
-  z-index: 2;
+.timeline-traveller {
+  font-size: 2rem;
+  position: sticky;
+  color: #2857a4;
+  top: 25%;
+  transform: rotate(90deg);
 }
 
 /*Portfolio Section*/
