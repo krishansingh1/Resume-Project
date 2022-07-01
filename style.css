@@ -244,10 +244,14 @@ section:nth-child(2n + 1) {
 .timeline-divider {
   border-top: 2px dashed #74adc8;
   position: absolute;
-  width:70%;
+  width: 70%;
 }
-/*Portfolio Section*/
 
+.timeline-divider i {
+  position: absolute;
+}
+
+/*Portfolio Section*/
 .section-heading span:nth-child(2) {
   text-transform: capitalize;
   font-weight: 200;
