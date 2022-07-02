@@ -271,7 +271,7 @@ section:nth-child(2n + 1) {
   width: 0;
   top: 10%;
   left: 50%;
-  border: 3px dashed #74adc8;
+  border: 1px dashed #74adc8;
 }
 
 .timeline-traveller {
