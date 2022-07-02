@@ -289,8 +289,9 @@ section:nth-child(2n + 1) {
   height: 115vh;
 }
 
-
-
+.edu-divider {
+  
+}
 
 /*Portfolio Section*/
 .section-heading span:nth-child(2) {
