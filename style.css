@@ -267,7 +267,7 @@ section:nth-child(2n + 1) {
 
 .timeline-divider {
   position: absolute;
-  height: 75%;
+  height: 74%;
   width: 0;
   top: 10%;
   left: 50%;
