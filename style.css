@@ -247,8 +247,8 @@ section:nth-child(2n + 1) {
   top: 30%;
   right: -14%;
   border-radius: 50%;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.9rem;
+  height: 0.9rem;
   background-color: gray;
   z-index: 1;
 }
@@ -259,10 +259,20 @@ section:nth-child(2n + 1) {
   top: 30%;
   left: -10.5%;
   border-radius: 50%;
-  width: 0.8rem;
-  height: 0.8rem;
+  width: 0.9rem;
+  height: 0.9rem;
   background-color: gray;
   z-index: 1;
+}
+
+.timeline-box h3 {
+  font-size: 1.4rem;
+  color: #2857a4;
+  padding-bottom: 0.4rem;
+}
+
+.timeline-box span {
+  margin-bottom: 1rem;
 }
 
 .timeline-divider {
@@ -290,7 +300,8 @@ section:nth-child(2n + 1) {
 }
 
 .edu-divider {
-  
+  height: 68%;
+  top: 11%;
 }
 
 /*Portfolio Section*/
