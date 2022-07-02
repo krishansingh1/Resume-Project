@@ -233,7 +233,7 @@ section:nth-child(2n + 1) {
   margin: 5px;
   width: 40%;
   left: 5%;
-  min-height: 150px;
+  min-height: 170px;
   border: 2px solid black;
 }
 
@@ -271,8 +271,8 @@ section:nth-child(2n + 1) {
   padding-bottom: 0.4rem;
 }
 
-.timeline-box span {
-  margin-bottom: 1rem;
+.space{
+  padding-bottom: 3rem;
 }
 
 .timeline-divider {
