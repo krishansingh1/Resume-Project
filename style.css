@@ -323,14 +323,14 @@ section:nth-child(2n + 1) {
   left: 62%;
 }
 
-.education-left h3{
+.education-left h3 {
   position: relative;
   left: 19%;
 }
 
-.more-left-2{
- position: relative;
- left: 9%;
+.more-left-2 {
+  position: relative;
+  left: 9%;
 }
 
 /*Portfolio Section*/
