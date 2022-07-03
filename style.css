@@ -285,11 +285,12 @@ section:nth-child(2n + 1) {
 
 .space {
   padding-bottom: 0.8rem;
+  color: gray;
 }
 
 .timeline-left {
   position: relative;
-  left: 64%;
+  left: 62%;
 }
 
 .timeline-left > p {
@@ -299,7 +300,9 @@ section:nth-child(2n + 1) {
 
 .more-left {
   position: relative;
-  left: 18.5%;
+  left: 16.5%;
+  color: #eb822d;
+  font-size: 1.1rem;
 }
 
 .timeline-divider {
@@ -320,6 +323,9 @@ section:nth-child(2n + 1) {
   z-index: 2;
 }
 
+.timeline-box > p{
+  color: gray;
+}
 /*Education Section*/
 
 #education {
@@ -334,7 +340,7 @@ section:nth-child(2n + 1) {
 
 .education-left {
   position: relative;
-  left: 62%;
+  left: 60%;
 }
 
 .education-left h3 {
@@ -344,7 +350,9 @@ section:nth-child(2n + 1) {
 
 .more-left-2 {
   position: relative;
-  left: 9%;
+  left: 6%;
+  color: #eb822d;
+  font-size: 1.1rem;
 }
 
 .edu-logo::before {
