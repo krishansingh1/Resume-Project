@@ -318,7 +318,20 @@ section:nth-child(2n + 1) {
   top: 11%;
 }
 
-.education
+.education-left {
+  position: relative;
+  left: 62%;
+}
+
+.education-left h3{
+  position: relative;
+  left: 19%;
+}
+
+.more-left-2{
+ position: relative;
+ left: 9%;
+}
 
 /*Portfolio Section*/
 .section-heading span:nth-child(2) {
