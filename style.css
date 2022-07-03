@@ -265,6 +265,9 @@ section:nth-child(2n + 1) {
   z-index: 1;
 }
 
+.timeline-box::before{
+  background-image: url(./);
+}
 .timeline-box h3 {
   font-size: 1.4rem;
   color: #2857a4;
