@@ -269,7 +269,6 @@ section:nth-child(2n + 1) {
 .timeline-box::before {
   content: "";
   position: absolute;
-  top: 5%;
   border-radius: 50%;
   width: 2.5rem;
   height: 2.5rem;
@@ -351,7 +350,6 @@ section:nth-child(2n + 1) {
 .edu-logo::before {
   content: "";
   position: absolute;
-  top: 10%;
   width: 2.5rem;
   height: 2.5rem;
   background-image: url("./High-Resolution-Emblem.png");
