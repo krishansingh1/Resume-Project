@@ -598,4 +598,25 @@ form textarea:focus {
   .skills-progress {
     margin-bottom: 5%;
   }
+
+  /*Work Experience*/
+  #experience {
+    height: 170vh;
+  }
+  .timeline-divider {
+    left: -5%;
+    height: 73%;
+  }
+
+  .timeline-box {
+    left: 15% !important;
+    /* border: 2px solid black; */
+    width: 60vw;
+    margin-top: 30px;
+  }
+
+  .timeline-box::after {
+    left: -27.5% !important;
+    top: 21% !important;
+  }
 }
