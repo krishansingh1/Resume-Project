@@ -125,7 +125,7 @@ section:nth-child(2n + 1) {
 }
 
 /*Skills section*/
-#skills{
+#skills {
   height: 75vh;
 }
 
@@ -224,7 +224,7 @@ section:nth-child(2n + 1) {
 
 #experience {
   width: 100%;
-  height: 135vh;
+  height: 150vh;
 }
 
 .timeline {
@@ -537,5 +537,44 @@ form textarea:focus {
   }
 
   /*Work Experience*/
-  
+  #experience {
+    height: 150vh;
+  }
+  .timeline-divider {
+    left: -5%;
+    height: 74%;
+  }
+
+  .timeline-box {
+    left: 15% !important;
+    /* border: 2px solid black; */
+    width: 60vw;
+    margin-top: 30px;
+  }
+
+  .timeline-box::after {
+    left: -27% !important;
+    top: 18% !important;
+  }
+
+  /*Education Section*/
+
+  #education {
+    height: 135vh;
+  }
+
+  .edu-divider {
+    height: 66%;
+  }
+
+  /*Portfolio section*/
+
+  #portfolio {
+    height: 160vh;
+  }
+
+  /*Contact section*/
+  #contact {
+    height: 100vh;
+  }
 }
