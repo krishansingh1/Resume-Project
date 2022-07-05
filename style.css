@@ -619,4 +619,9 @@ form textarea:focus {
     left: -27.5% !important;
     top: 21% !important;
   }
+
+  .timeline-left + p {
+    position: relative;
+    left: 40px;
+  }
 }
