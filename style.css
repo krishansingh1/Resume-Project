@@ -577,4 +577,9 @@ form textarea:focus {
   #contact {
     height: 100vh;
   }
+
+  /*Button*/
+  .form-btn {
+    margin-left: -1px;
+  }
 }
