@@ -624,4 +624,29 @@ form textarea:focus {
     position: relative;
     left: 40px;
   }
+
+  /*Education Section*/
+
+  #education {
+    height: 135vh;
+  }
+
+  .edu-divider {
+    height: 66%;
+  }
+
+  .timeline-box::after{
+    top:20.5% !important; 
+  }
+
+  /*Portfolio section*/
+
+  #portfolio {
+    height: 275vh;
+  }
+
+  .portfolio-display{
+    position: relative;
+    left: 13%;
+  }
 }
