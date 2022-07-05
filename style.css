@@ -635,8 +635,8 @@ form textarea:focus {
     height: 66%;
   }
 
-  .timeline-box::after{
-    top:20.5% !important; 
+  .timeline-box::after {
+    top: 20.5% !important;
   }
 
   /*Portfolio section*/
@@ -645,8 +645,35 @@ form textarea:focus {
     height: 275vh;
   }
 
-  .portfolio-display{
+  .portfolio-display {
     position: relative;
     left: 13%;
+  }
+
+  /*Contact section*/
+  #contact {
+    height: 155vh;
+  }
+
+  #main-content {
+    width: 100%;
+    /* display: flex; */
+  }
+
+  #form-align {
+    margin-left: 16%;
+    width: 56%;
+  }
+
+  #info {
+    margin-top: 10%;
+    margin-left: 16%;
+    width: 70%;
+  }
+
+  .form-btn {
+    position: relative;
+    left: 35%;
+    font-size: 0.8rem;
   }
 }
