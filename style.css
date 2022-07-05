@@ -125,6 +125,9 @@ section:nth-child(2n + 1) {
 }
 
 /*Skills section*/
+#skills{
+  height: 75vh;
+}
 
 .section-heading {
   color: #2857a4;
@@ -520,4 +523,16 @@ form textarea:focus {
 .contact-social li a i {
   margin-left: 2rem;
   font-size: 1.3rem;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+  /*Skills Section*/
+  #skills {
+    height: 80vh;
+  }
+  .skills-display {
+    justify-content: space-between;
+  }
 }
