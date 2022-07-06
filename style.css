@@ -520,6 +520,9 @@ form textarea:focus {
   padding-right: 1rem;
 }
 
+.space i{
+  color: white;
+}
 .contact-social li a i {
   margin-left: 2rem;
   font-size: 1.3rem;
