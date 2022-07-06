@@ -527,6 +527,12 @@ form textarea:focus {
 
 /* Responsive */
 
+@media screen and (max-width: 1075px) {
+  #portfolio {
+    height: 150vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   /*Skills Section*/
   #skills {
@@ -581,6 +587,17 @@ form textarea:focus {
   /*Button*/
   .form-btn {
     margin-left: -1px;
+  }
+}
+
+@media screen and (max-width: 722px) {
+  #portfolio {
+    height: 270vh;
+  }
+
+  .portfolio-display {
+    position: relative;
+    left: 15%;
   }
 }
 
