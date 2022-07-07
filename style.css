@@ -26,6 +26,10 @@ body {
   margin: 0px;
 }
 
+.hamburger-lines {
+  display: none;
+}
+
 .horizontal-list li {
   list-style-type: none;
   display: inline-block;
@@ -520,7 +524,7 @@ form textarea:focus {
   padding-right: 1rem;
 }
 
-.space i{
+.space i {
   color: white;
 }
 
@@ -606,10 +610,7 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 572px) {
-
   /*Humberger*/
-
-
 
   /*Skills Section*/
   #skills {
@@ -702,5 +703,4 @@ form textarea:focus {
     left: 35%;
     font-size: 0.8rem;
   }
-
 }
