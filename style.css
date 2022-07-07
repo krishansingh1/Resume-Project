@@ -27,7 +27,7 @@ body {
 }
 
 .hamburger-lines {
-  display: none;
+  opacity: 0;
 }
 
 .horizontal-list li {
@@ -610,7 +610,17 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 572px) {
-  /*Humberger*/
+  /*Hamberger*/
+
+  .navbar {
+    opacity: 0;
+  }
+  .hamburger-lines {
+    position: relative;
+    left: 50%;
+    opacity: 1;
+    height: 20%;
+  }
 
   /*Skills Section*/
   #skills {
