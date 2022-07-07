@@ -615,10 +615,12 @@ form textarea:focus {
   .navbar {
     opacity: 0;
   }
+
   .hamburger-lines {
     position: relative;
     left: 50%;
-    opacity: 1;
+    opacity: 2;
+    display: inline;
     height: 20%;
   }
 
