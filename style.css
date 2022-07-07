@@ -606,6 +606,11 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 572px) {
+
+  /*Humberger*/
+
+
+
   /*Skills Section*/
   #skills {
     height: 100vh;
@@ -698,5 +703,4 @@ form textarea:focus {
     font-size: 0.8rem;
   }
 
-  
 }
