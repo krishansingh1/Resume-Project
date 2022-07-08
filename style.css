@@ -610,26 +610,49 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 572px) {
-  /*Hamberger*/
+  /*Hamburger*/
 
-  /* .navbar {
-    opacity: 0;
-  } */
+  .navbar {
+    /* position: relative;
+    left: 40%; */
+    /* opacity: 1; */
+  }
 
-  .hamburger-lines {
+  #hamburger-lines {
     position: relative;
-    left: 50%;
-    /* opacity: 2 !important; */
-    display: inline;
-    height: 20%;
+    left: 90%;
+    cursor: pointer;
+  }
+  .line {
+    display: block;
+    height: 10px;
+    width: 100%;
+    /* border-radius: 10px; */
   }
 
-  .lines {
-    width: 10%;
-    height: 10%;
-    border: solid gray;
-    border-width: 2px 0 0 0;
+  .line1 {
+    width: 35px;
+    border: solid black;
+    border-width: 5px 0 0 0;
   }
+
+  .line2 {
+    width: 35px;
+    border: solid black;
+    border-width: 5px 0 0 0;
+  }
+
+  .line3 {
+    width: 35px;
+    border: solid black;
+    border-width: 5px 0 0 0;
+  }
+
+  #nav-list {
+    opacity: 0;
+    display: none;
+  }
+
   /*Skills Section*/
   #skills {
     height: 100vh;
