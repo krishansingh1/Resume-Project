@@ -623,6 +623,11 @@ form textarea:focus {
     left: 90%;
     cursor: pointer;
   }
+
+  #hamburger-lines:hover {
+    
+  }
+
   .line {
     display: block;
     height: 10px;
