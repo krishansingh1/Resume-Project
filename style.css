@@ -611,13 +611,13 @@ form textarea:focus {
 
 @media screen and (max-width: 572px) {
   /*Hamburger*/
-  #resume-header {
+  /* #resume-header {
     height: 75vh;
-  }
+  } */
 
   #social-info {
     position: relative;
-    top: -53%;
+    top: -62%;
     z-index: 0;
   }
 
