@@ -617,7 +617,7 @@ form textarea:focus {
 
   #social-info {
     position: relative;
-    /* left: 15%; */
+    top: -53%;
     z-index: 0;
   }
 
@@ -660,7 +660,7 @@ form textarea:focus {
   #nav-list li {
     display: block;
     padding: 10px 0;
-    position: absolute;
+    position: relative;
     left: 66.5%;
     top: 50%;
     background-color: black;
