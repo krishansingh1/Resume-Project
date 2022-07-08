@@ -612,12 +612,13 @@ form textarea:focus {
 @media screen and (max-width: 572px) {
   /*Hamburger*/
   #resume-header {
-    height: 70vh;
+    height: 75vh;
   }
 
   #social-info {
     position: relative;
-    top: -62%;
+    /* left: 15%; */
+    z-index: 0;
   }
 
   #hamburger-lines {
@@ -651,17 +652,17 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  /* #nav-list { */
-  /* opacity: 0; */
-  /* display: none; */
-  /* } */
+  /* #nav-list {
+    opacity: 0;
+    display: none;
+  } */
 
   #nav-list li {
     display: block;
     padding: 10px 0;
-    position: relative;
+    position: absolute;
     left: 66.5%;
-    top: 6px;
+    top: 50%;
     background-color: black;
     width: 150px;
     /* margin-top: 10px; */
