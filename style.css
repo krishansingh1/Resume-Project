@@ -631,19 +631,19 @@ form textarea:focus {
   }
 
   .line1 {
-    width: 35px;
+    width: 30px;
     border: solid black;
     border-width: 5px 0 0 0;
   }
 
   .line2 {
-    width: 35px;
+    width: 30px;
     border: solid black;
     border-width: 5px 0 0 0;
   }
 
   .line3 {
-    width: 35px;
+    width: 30px;
     border: solid black;
     border-width: 5px 0 0 0;
   }
