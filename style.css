@@ -612,20 +612,18 @@ form textarea:focus {
 @media screen and (max-width: 572px) {
   /*Hamburger*/
   #resume-header {
-    height: 80vh;
+    height: 70vh;
   }
+
   #social-info {
     position: relative;
-    top: 23%;
+    top: -62%;
   }
+
   #hamburger-lines {
     position: relative;
     left: 90%;
     cursor: pointer;
-  }
-
-  #hamburger-lines:hover {
-    
   }
 
   .line {
@@ -653,9 +651,21 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  #nav-list {
-    opacity: 0;
-    display: none;
+  /* #nav-list { */
+  /* opacity: 0; */
+  /* display: none; */
+  /* } */
+
+  #nav-list li {
+    display: block;
+    padding: 10px 0;
+    position: relative;
+    left: 66.5%;
+    top: 6px;
+    background-color: black;
+    width: 150px;
+    /* margin-top: 10px; */
+    z-index: 1;
   }
 
   /*Skills Section*/
