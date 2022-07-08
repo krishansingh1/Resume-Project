@@ -611,14 +611,9 @@ form textarea:focus {
 
 @media screen and (max-width: 572px) {
   /*Hamburger*/
-  /* #resume-header {
-    height: 75vh;
-  } */
 
-  #social-info {
-    position: relative;
-    top: -62%;
-    z-index: 0;
+  #resume-header {
+    height: 77vh;
   }
 
   #hamburger-lines {
@@ -652,10 +647,10 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  /* #nav-list {
-    opacity: 0;
+  #nav-list {
+    /* opacity: 0; */
     display: none;
-  } */
+  }
 
   #nav-list li {
     display: block;
