@@ -612,18 +612,24 @@ form textarea:focus {
 @media screen and (max-width: 572px) {
   /*Hamberger*/
 
-  .navbar {
+  /* .navbar {
     opacity: 0;
-  }
+  } */
 
   .hamburger-lines {
     position: relative;
     left: 50%;
-    opacity: 2;
+    /* opacity: 2 !important; */
     display: inline;
     height: 20%;
   }
 
+  .lines {
+    width: 10%;
+    height: 10%;
+    border: solid gray;
+    border-width: 2px 0 0 0;
+  }
   /*Skills Section*/
   #skills {
     height: 100vh;
