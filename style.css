@@ -647,11 +647,6 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  #nav-list {
-    /* opacity: 0; */
-    display: none;
-  }
-
   #nav-list li {
     display: block;
     padding: 10px 0;
