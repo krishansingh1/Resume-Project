@@ -8,6 +8,7 @@ body {
   font-family: sans-serif;
   overflow-x: hidden;
 }
+
 /*Header*/
 #resume-header {
   opacity: 0.8;
@@ -42,9 +43,11 @@ body {
   color: white;
   text-decoration: none;
 }
+
 .nav-menu li a {
   transition: color 0.4s, border-bottom 4s;
 }
+
 .nav-menu li a:hover {
   color: #d3d3d3;
   border-bottom: 1px solid white;
@@ -78,12 +81,14 @@ body {
   height: auto;
   width: 100%;
 }
+
 #my-image {
   width: 12rem;
   height: 12rem;
   margin: auto;
   margin-top: -14vh;
 }
+
 #my-image img {
   width: 100%;
   height: 100%;
@@ -166,10 +171,11 @@ section:nth-child(2n + 1) {
   margin-left: 4rem;
 }
 
-.skills-progress > div {
+.skills-progress>div {
   border-radius: 20px 0px 0px 20px;
   box-shadow: 15px 0px 20px -10px rgba(0, 0, 0, 0.75);
 }
+
 .mb-blue {
   background-color: #2857a4;
 }
@@ -301,7 +307,7 @@ section:nth-child(2n + 1) {
   left: 62%;
 }
 
-.timeline-left > p {
+.timeline-left>p {
   position: relative;
   right: 3.5%;
 }
@@ -331,9 +337,10 @@ section:nth-child(2n + 1) {
   z-index: 2;
 }
 
-.timeline-box > p {
+.timeline-box>p {
   color: gray;
 }
+
 /*Education Section*/
 
 #education {
@@ -370,11 +377,13 @@ section:nth-child(2n + 1) {
   height: 2.5rem;
   background-image: url("./High-Resolution-Emblem.png");
 }
+
 /*Portfolio Section*/
 .section-heading span:nth-child(2) {
   text-transform: capitalize;
   font-weight: 200;
 }
+
 #bold {
   font-weight: bold;
 }
@@ -444,9 +453,11 @@ section:nth-child(2n + 1) {
   justify-content: space-between;
   margin-bottom: 3rem;
 }
+
 #form-align {
   width: 40%;
 }
+
 form input {
   border: none;
   background: none;
@@ -458,9 +469,11 @@ form input {
 form input:focus {
   color: white;
 }
+
 form input::placeholder {
   color: white;
 }
+
 form textarea::placeholder {
   color: white;
 }
@@ -520,7 +533,7 @@ form textarea:focus {
   color: lightgray;
 }
 
-.space span > i {
+.space span>i {
   padding-right: 1rem;
 }
 
@@ -542,10 +555,12 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 768px) {
+
   /*Skills Section*/
   #skills {
     height: 80vh;
   }
+
   .skills-display {
     justify-content: space-between;
   }
@@ -554,6 +569,7 @@ form textarea:focus {
   #experience {
     height: 150vh;
   }
+
   .timeline-divider {
     left: -5%;
     height: 74%;
@@ -677,6 +693,7 @@ form textarea:focus {
   #experience {
     height: 170vh;
   }
+
   .timeline-divider {
     left: -5%;
     height: 73%;
@@ -694,7 +711,7 @@ form textarea:focus {
     top: 21% !important;
   }
 
-  .timeline-left + p {
+  .timeline-left+p {
     position: relative;
     left: 40px;
   }
@@ -749,5 +766,10 @@ form textarea:focus {
     position: relative;
     left: 35%;
     font-size: 0.8rem;
+  }
+
+  #my-name {
+    position: relative;
+    top: -8rem;
   }
 }
