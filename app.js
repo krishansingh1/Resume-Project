@@ -23,8 +23,16 @@ if (x.matches) {
 }
 
 about.addEventListener("click", () => {
-  clearInterval(id);
-  var id = setInterval(() => {
-    window.scrollBy(0, 150);
+  let y = 0;
+
+  let smoothScroll = setInterval(() => {
+    window.scrollBy(0, (y = 200));
   }, 1000);
+
+  if ((y = 200)) {
+    clearInterval(id);
+  }
+  // setTimeout(() => {
+  //   window.scrollBy(0, 150);
+  // }, 1000);
 });
