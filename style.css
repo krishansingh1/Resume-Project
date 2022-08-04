@@ -663,16 +663,24 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  /* #nav-list li {
+  #nav-list li {
+    display: none;
+  }
+
+  #social-info {
+    position: fixed;
+    left: 5rem;
+  }
+
+  #nav-list.active li {
     display: block;
     padding: 10px 0;
     position: relative;
-    left: 66.5%;
+    left: 66%;
     top: 50%;
     background-color: black;
     width: 150px;
-    z-index: 1;
-  } */
+  }
 
   /*Skills Section*/
   #skills {

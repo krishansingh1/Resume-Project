@@ -1,8 +1,10 @@
-const click = document.getElementById("hamburger-lines");
-const show = document.getElementById("nav-list");
-const position = document.getElementById("social-info");
-const clickhere = document.getElementById("resume-header");
+const navbar = document.getElementById("hamburger-lines");
+const list = document.getElementById("nav-list");
 const about = document.getElementById("about");
+
+navbar.addEventListener("click", () => {
+  list.classList.toggle("active");
+});
 
 about.addEventListener("click", () => {
   let y = 0;
