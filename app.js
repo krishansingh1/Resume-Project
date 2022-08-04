@@ -5,6 +5,8 @@ const about = document.getElementById("about");
 const skills = document.getElementById("skills");
 const experience = document.getElementById("experience");
 const education = document.getElementById("education");
+const portfolio = document.getElementById("portfolio");
+const contact = document.getElementById("contact");
 
 navbar.addEventListener("click", () => {
   list.classList.toggle("active");
@@ -54,17 +56,27 @@ education.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 25);
+  }, 20);
 });
 
 portfolio.addEventListener("click", () => {
   let timeRun = 0;
-
   let smoothScroll = setInterval(() => {
     timeRun += 1;
-    if (timeRun === 43) {
+    if (timeRun === 58) {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 25);
+  }, 20);
+});
+
+contact.addEventListener("click", () => {
+  let timeRun = 0;
+  let smoothScroll = setInterval(() => {
+    timeRun += 1;
+    if (timeRun === 58) {
+      clearInterval(smoothScroll);
+    }
+    window.scrollBy(0, 50);
+  }, 20);
 });
