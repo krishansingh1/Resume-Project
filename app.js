@@ -6,7 +6,7 @@ const skills = document.getElementById("skills");
 const experience = document.getElementById("experience");
 const education = document.getElementById("education");
 const portfolio = document.getElementById("portfolio");
-const contact = document.getElementById("contactSlide");
+const contact = document.getElementById("contact");
 
 navbar.addEventListener("click", () => {
   list.classList.toggle("active");
@@ -22,7 +22,7 @@ about.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 25);
+  }, 20);
 });
 
 skills.addEventListener("click", () => {
@@ -33,7 +33,7 @@ skills.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 25);
+  }, 20);
 });
 
 experience.addEventListener("click", () => {
@@ -44,7 +44,7 @@ experience.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 25);
+  }, 20);
 });
 
 education.addEventListener("click", () => {
@@ -67,16 +67,16 @@ portfolio.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 20);
+  }, 10);
 });
 
 contact.addEventListener("click", () => {
   let timeRun = 0;
   let smoothScroll = setInterval(() => {
     timeRun += 1;
-    if (timeRun === 58) {
+    if (timeRun === 75) {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 20);
+  }, 10);
 });

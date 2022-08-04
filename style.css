@@ -435,7 +435,7 @@ section:nth-child(2n + 1) {
 }
 
 /*Contact Section*/
-#contact {
+.contact-2 {
   background: linear-gradient(90deg, #2857a4, #403066 60%);
   width: 100%;
   height: 95vh;
