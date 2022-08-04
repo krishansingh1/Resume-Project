@@ -667,19 +667,20 @@ form textarea:focus {
     display: none;
   }
 
-  #social-info {
-    position: fixed;
-    left: 5rem;
+  #social-info.active {
+    position: relative;
+    top: -15.78rem;
   }
 
   #nav-list.active li {
     display: block;
     padding: 10px 0;
     position: relative;
-    left: 66%;
+    left: 66.5%;
     top: 50%;
     background-color: black;
     width: 150px;
+    z-index: 1;
   }
 
   /*Skills Section*/
