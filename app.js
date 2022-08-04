@@ -6,7 +6,7 @@ const skills = document.getElementById("skills");
 const experience = document.getElementById("experience");
 const education = document.getElementById("education");
 const portfolio = document.getElementById("portfolio");
-const contact = document.getElementById("contact");
+const contact = document.getElementById("contactSlide");
 
 navbar.addEventListener("click", () => {
   list.classList.toggle("active");
