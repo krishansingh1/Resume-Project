@@ -663,7 +663,7 @@ form textarea:focus {
     border-width: 5px 0 0 0;
   }
 
-  #nav-list li {
+  /* #nav-list li {
     display: block;
     padding: 10px 0;
     position: relative;
@@ -672,7 +672,7 @@ form textarea:focus {
     background-color: black;
     width: 150px;
     z-index: 1;
-  }
+  } */
 
   /*Skills Section*/
   #skills {
@@ -766,11 +766,4 @@ form textarea:focus {
     left: 35%;
     font-size: 0.8rem;
   }
-
-  #my-name {
-    position: relative;
-    top: -8rem;
-  }
-
-
 }
