@@ -4,6 +4,8 @@ const display = document.getElementById("social-info");
 const about = document.getElementById("about");
 const skills = document.getElementById("skills");
 const experience = document.getElementById("experience");
+const education = document.getElementById("education");
+
 navbar.addEventListener("click", () => {
   list.classList.toggle("active");
   display.classList.toggle("active");
@@ -37,6 +39,30 @@ experience.addEventListener("click", () => {
   let smoothScroll = setInterval(() => {
     timeRun += 1;
     if (timeRun == 24) {
+      clearInterval(smoothScroll);
+    }
+    window.scrollBy(0, 50);
+  }, 25);
+});
+
+education.addEventListener("click", () => {
+  let timeRun = 0;
+
+  let smoothScroll = setInterval(() => {
+    timeRun += 1;
+    if (timeRun === 43) {
+      clearInterval(smoothScroll);
+    }
+    window.scrollBy(0, 50);
+  }, 25);
+});
+
+portfolio.addEventListener("click", () => {
+  let timeRun = 0;
+
+  let smoothScroll = setInterval(() => {
+    timeRun += 1;
+    if (timeRun === 43) {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
