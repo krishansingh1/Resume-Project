@@ -18,7 +18,7 @@ about.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 50);
+  }, 25);
 });
 
 skills.addEventListener("click", () => {
@@ -29,5 +29,16 @@ skills.addEventListener("click", () => {
       clearInterval(smoothScroll);
     }
     window.scrollBy(0, 50);
-  }, 50);
+  }, 25);
+});
+
+experience.addEventListener("click", () => {
+  let timeRun = 0;
+  let smoothScroll = setInterval(() => {
+    timeRun += 1;
+    if (timeRun == 24) {
+      clearInterval(smoothScroll);
+    }
+    window.scrollBy(0, 50);
+  }, 25);
 });
