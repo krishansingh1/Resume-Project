@@ -7,7 +7,6 @@ const display = document.getElementById("social-info");
 // const education = document.getElementById("education");
 // const portfolio = document.getElementById("portfolio");
 // const contact = document.getElementById("contact");
-
 navbar.addEventListener("click", () => {
   list.classList.toggle("active");
   display.classList.toggle("active");
@@ -80,3 +79,12 @@ navbar.addEventListener("click", () => {
 //     window.scrollBy(0, 50);
 //   }, 10);
 // });
+
+const scroll = document.querySelectorAll(".scroll-links");
+console.log(scroll);
+scroll.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget);
+  });
+});
