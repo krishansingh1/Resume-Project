@@ -9,13 +9,15 @@ navbar.addEventListener("click", () => {
 });
 
 about.addEventListener("click", () => {
-  let y = 0;
+  let timeRun = 0;
 
-  let smoothScroll = setInterval(() => {
-    window.scrollBy(0, (y = 200));
-  }, 1000);
-
-  // if ((y = 200)) {
-  //   smoothScroll(id);
-  // }
+  let smoothScroll = setInterval(function () {
+    timeRun += 1;
+    if (timeRun === 2) {
+      clearInterval(smoothScroll);
+    }
+    window.scrollBy(0, 50);
+  }, 50);
 });
+
+
