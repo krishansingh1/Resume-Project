@@ -626,8 +626,8 @@ form textarea:focus {
 }
 
 @media screen and (max-width: 572px) {
-  /*Hamburger*/
 
+  /*Hamburger*/
   #resume-header {
     height: 77vh;
   }
@@ -671,7 +671,6 @@ form textarea:focus {
     top: 50%;
     background-color: black;
     width: 150px;
-    /* margin-top: 10px; */
     z-index: 1;
   }
 
@@ -773,5 +772,5 @@ form textarea:focus {
     top: -8rem;
   }
 
-  
+
 }
