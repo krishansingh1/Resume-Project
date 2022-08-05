@@ -91,14 +91,19 @@ scroll.forEach((link) => {
     console.log(element);
 
     const smoothScroll = setInterval(() => {
-      const corrdinates = element.getBoundingClientRect();
-
-      if (corrdinates.top <= 0) {
+      const coordinates = element.getBoundingClientRect();
+      console.log(coordinates.top);
+      if (coordinates.top <= 0) {
         clearInterval(smoothScroll);
         return;
       }
+
+      if (coordinates.top == 31.984375) {
+        clearInterval(smoothScroll);
+        return;
+      }
+
       window.scrollBy(0, 50);
     }, 20);
-    // currentPostion = targetPosition;
   });
 });
