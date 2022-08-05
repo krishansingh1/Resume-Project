@@ -820,6 +820,11 @@ section:nth-child(2n + 1) {
   height: inherit;
 }
 
+.fifty-five-percent {
+  width: 50%;
+  height: inherit;
+}
+
 .skill-name span {
   color: white;
   font-size: 1rem;

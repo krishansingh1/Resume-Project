@@ -1,8 +1,7 @@
 const navbar = document.getElementById("hamburger-lines");
 const list = document.getElementById("nav-list");
 const display = document.getElementById("social-info");
-const levelNum = document.querySelectorAll("#level");
-const progressBar = document.querySelector(".skill-progress > div");
+const progressBar = document.querySelectorAll(".skills-progress > div");
 const container = document.getElementById("skill-container");
 // const about = document.getElementById("about");
 // const skills = document.getElementById("skills");
@@ -115,11 +114,36 @@ function scrollVertically(element) {
 }
 
 window.addEventListener("scroll", checkScroll);
+let animationDone = false;
+
+function initialBars() {
+  for (let bar of progressBar) {
+    bar.style.width = 0 + "%";
+  }
+}
+
+initialBars();
+
+function fillBars() {
+  for (let bar of progressBar) {
+    let targetLevel = bar.getAttribute("data-skill_level");
+    let currentLevel = 0;
+    let interval = setInterval(() => {
+      if (currentLevel > targetLevel) {
+        clearInterval(interval);
+        return;
+      }
+      currentLevel++;
+      bar.style.width = currentLevel + "%";
+    }, 5);
+  }
+}
 
 function checkScroll() {
-  // const level = skills.dataset.skill_level;
-  // console.log(level);
-  // if (level == 50) {
-  // }
-  
+  let coordinates = container.getBoundingClientRect().top;
+  if (!animationDone && coordinates <= window.innerHeight) {
+    animationDone = true;
+    console.log("Skills is visible");
+  }
+  fillBars();
 }
