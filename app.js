@@ -85,6 +85,19 @@ console.log(scroll);
 scroll.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
-    console.log(e.currentTarget);
+    const id = e.currentTarget.getAttribute("href").slice(1);
+    console.log(id);
+    const element = document.getElementById(id);
+    console.log(element);
+
+    const smoothScroll = setInterval(() => {
+      const corrdinates = element.getBoundingClientRect();
+      if (corrdinates.top <= 0) {
+        clearInterval(smoothScroll);
+        return;
+      }
+      window.scrollBy(0, 50);
+    }, 20);
+    // currentPostion = targetPosition;
   });
 });
