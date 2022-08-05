@@ -100,9 +100,9 @@ scroll.forEach((link) => {
     if (id == "skills") {
       skillProgress.forEach((skills) => {
         const level = skills.dataset.skill_level;
-
+        console.log(level);
+        let start = 0;
         if (level == 50) {
-          
         }
       });
     }
