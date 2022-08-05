@@ -2,7 +2,6 @@ const navbar = document.getElementById("hamburger-lines");
 const list = document.getElementById("nav-list");
 const display = document.getElementById("social-info");
 const skillProgress = document.querySelectorAll("#level");
-
 // const about = document.getElementById("about");
 // const skills = document.getElementById("skills");
 // const experience = document.getElementById("experience");
@@ -103,7 +102,6 @@ scroll.forEach((link) => {
         console.log(level);
         let start = 0;
         if (level == 50) {
-          
         }
       });
     }
