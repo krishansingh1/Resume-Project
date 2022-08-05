@@ -81,7 +81,9 @@ navbar.addEventListener("click", () => {
 // });
 
 const scroll = document.querySelectorAll(".scroll-links");
-console.log(scroll);
+// console.log(scroll);
+let smoothScroll;
+
 scroll.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -90,18 +92,20 @@ scroll.forEach((link) => {
     const element = document.getElementById(id);
     console.log(element);
 
-    const smoothScroll = setInterval(() => {
-      const coordinates = element.getBoundingClientRect();
-      console.log(coordinates.top);
-      if (coordinates.top <= 0) {
-        clearInterval(smoothScroll);
-        return;
-      }
-      if (coordinates.top == 31.984375) {
-        clearInterval(smoothScroll);
-        return;
-      }
-      window.scrollBy(0, 50);
-    }, 20);
+    smoothScroll = setInterval(scrollVertically, 20, element);
   });
 });
+
+function scrollVertically(element) {
+  const coordinates = element.getBoundingClientRect();
+
+  if (coordinates.top <= 0) {
+    clearInterval(smoothScroll);
+  }
+
+  if (coordinates.top == 31.984375) {
+    clearInterval(smoothScroll);
+  }
+
+  window.scrollBy(0, 50);
+}
