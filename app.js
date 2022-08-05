@@ -1,6 +1,7 @@
 const navbar = document.getElementById("hamburger-lines");
 const list = document.getElementById("nav-list");
 const display = document.getElementById("social-info");
+const skillScroll = document.getElementById("skills");
 // const about = document.getElementById("about");
 // const skills = document.getElementById("skills");
 // const experience = document.getElementById("experience");
@@ -96,6 +97,10 @@ scroll.forEach((link) => {
   });
 });
 
+skillScroll.addEventListener("click", () => {
+  scrollVertically();
+});
+
 function scrollVertically(element) {
   const coordinates = element.getBoundingClientRect();
 
@@ -109,5 +114,3 @@ function scrollVertically(element) {
 
   window.scrollBy(0, 25);
 }
-
-
