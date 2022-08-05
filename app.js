@@ -1,7 +1,7 @@
 const navbar = document.getElementById("hamburger-lines");
 const list = document.getElementById("nav-list");
 const display = document.getElementById("social-info");
-const skillProgress = document.querySelectorAll("skills-progress");
+const skillProgress = document.querySelectorAll(".skills-progress");
 
 // const about = document.getElementById("about");
 // const skills = document.getElementById("skills");
@@ -87,6 +87,7 @@ const scroll = document.querySelectorAll(".scroll-links");
 let smoothScroll;
 
 scroll.forEach((link) => {
+  // console.log(link);
   link.addEventListener("click", (e) => {
     e.preventDefault();
     const id = e.currentTarget.getAttribute("href").slice(1);
@@ -97,12 +98,10 @@ scroll.forEach((link) => {
     smoothScroll = setInterval(scrollVertically, 8, element);
 
     if (id == "skills") {
-      skillProgress.forEach((skills) => {
-        console.log(skills);
+      skillProgress.forEach((skills) =>{
+        
       });
-    }
-  });
-});
+};
 
 function scrollVertically(element) {
   const coordinates = element.getBoundingClientRect();
