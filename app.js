@@ -97,12 +97,10 @@ scroll.forEach((link) => {
         clearInterval(smoothScroll);
         return;
       }
-
       if (coordinates.top == 31.984375) {
         clearInterval(smoothScroll);
         return;
       }
-
       window.scrollBy(0, 50);
     }, 20);
   });
