@@ -98,10 +98,12 @@ scroll.forEach((link) => {
     smoothScroll = setInterval(scrollVertically, 8, element);
 
     if (id == "skills") {
-      skillProgress.forEach((skills) =>{
-        
+      skillProgress.forEach((skills) => {
+        console.log(skills);
       });
-};
+    }
+  });
+});
 
 function scrollVertically(element) {
   const coordinates = element.getBoundingClientRect();
