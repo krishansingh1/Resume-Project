@@ -92,7 +92,7 @@ scroll.forEach((link) => {
     const element = document.getElementById(id);
     console.log(element);
 
-    smoothScroll = setInterval(scrollVertically, 20, element);
+    smoothScroll = setInterval(scrollVertically, 8, element);
   });
 });
 
@@ -107,5 +107,5 @@ function scrollVertically(element) {
     clearInterval(smoothScroll);
   }
 
-  window.scrollBy(0, 50);
+  window.scrollBy(0, 25);
 }
