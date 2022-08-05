@@ -97,16 +97,6 @@ scroll.forEach((link) => {
     console.log(element);
 
     smoothScroll = setInterval(scrollVertically, 8, element);
-
-    if (id == "skills") {
-      skillProgress.forEach((skills) => {
-        const level = skills.dataset.skill_level;
-        console.log(level);
-        let start = 0;
-        if (level == 50) {
-        }
-      });
-    }
   });
 });
 
@@ -122,4 +112,14 @@ function scrollVertically(element) {
   }
 
   window.scrollBy(0, 25);
+}
+
+window.addEventListener("scroll", checkScroll);
+
+function checkScroll() {
+  // const level = skills.dataset.skill_level;
+  // console.log(level);
+  // if (level == 50) {
+  // }
+  
 }
