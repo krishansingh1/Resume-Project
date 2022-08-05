@@ -145,5 +145,8 @@ function checkScroll() {
     animationDone = true;
     console.log("Skills is visible");
     fillBars();
+  } else if (coordinates > window.innerHeight) {
+    animationDone = false;
+    initialBars();
   }
 }
