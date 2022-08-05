@@ -92,6 +92,7 @@ scroll.forEach((link) => {
 
     const smoothScroll = setInterval(() => {
       const corrdinates = element.getBoundingClientRect();
+
       if (corrdinates.top <= 0) {
         clearInterval(smoothScroll);
         return;
