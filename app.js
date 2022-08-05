@@ -1,7 +1,9 @@
 const navbar = document.getElementById("hamburger-lines");
 const list = document.getElementById("nav-list");
 const display = document.getElementById("social-info");
-const skillProgress = document.querySelectorAll("#level");
+const levelNum = document.querySelectorAll("#level");
+const progressBar = document.querySelector(".skill-progress > div");
+const container = document.getElementById("skill-container");
 // const about = document.getElementById("about");
 // const skills = document.getElementById("skills");
 // const experience = document.getElementById("experience");
