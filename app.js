@@ -139,20 +139,33 @@ function fillBars() {
   }
 }
 
-function singleBars(){
-  for(let bar of progressBar){
-    
-  }
+function initialBar(bar) {
+  bar.style.width = 0 + "%";
+}
+
+function singleBar(bar) {
+  let targetLevel = bar.getAttribute("data-skill_level");
+  let currentLevel = 0;
+  let interval = setInterval(() => {
+    if (currentLevel > targetLevel) {
+      clearInterval(interval);
+      return;
+    }
+    currentLevel++;
+    bar.style.width = currentLevel + "%";
+  }, 5);
 }
 
 function checkScroll() {
-  let coordinates = container.getBoundingClientRect().top;
-  if (!animationDone && coordinates <= window.innerHeight) {
-    animationDone = true;
-    console.log("Skills is visible");
-    fillBars();
-  } else if (coordinates > window.innerHeight) {
-    animationDone = false;
-    initialBars();
+  for (let bar of progressBar) {
+    let coordinates = bar.getBoundingClientRect().top;
+    // console.log(coordinates);
+    if (!animationDone && coordinates <= window.innerHeight) {
+      animationDone = true;
+      console.log("Skills is visible");
+      singleBar(bar);
+    } else if (coordinates > window.innerHeight) {
+      initialBar(bar);
+    }
   }
 }
