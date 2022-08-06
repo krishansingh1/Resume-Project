@@ -158,7 +158,7 @@ function singleBar(bar) {
 
 function checkScroll() {
   for (let bar of progressBar) {
-    let coordinates = bar.getBoundingClientRect().top;
+    let coordinates = container.getBoundingClientRect().top;
     // console.log(coordinates);
     if (!animationDone && coordinates <= window.innerHeight) {
       animationDone = true;
