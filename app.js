@@ -139,15 +139,31 @@ function fillBars() {
   }
 }
 
+function checkScroll() {
+  let coordinates = container.getBoundingClientRect();
+  if (!animationDone && coordinates.top <= window.innerHeight) {
+    animationDone = true;
+    fillBars();
+  } else if (coordinates.top > window.innerHeight) {
+    animationDone = false;
+    initialBars();
+  }
+}
+
 function initialBar(bar) {
+  bar.setAttribute("data-visited", false);
   bar.style.width = 0 + "%";
 }
 
+for (var bar of progressBar) {
+  initialBar(bar);
+}
+
 function singleBar(bar) {
-  let targetLevel = bar.getAttribute("data-skill_level");
   let currentLevel = 0;
+  let targetLevel = bar.getAttribute("data-skill_level");
   let interval = setInterval(() => {
-    if (currentLevel > targetLevel) {
+    if (currentLevel >= targetLevel) {
       clearInterval(interval);
       return;
     }
@@ -156,14 +172,19 @@ function singleBar(bar) {
   }, 5);
 }
 
-function checkScroll() {
-  for (let bar of progressBar) {
-    let coordinates = container.getBoundingClientRect().top;
-    // console.log(coordinates);
-    if (!animationDone && coordinates <= window.innerHeight) {
-      animationDone = true;
-      console.log("Skills is visible");
-      singleBar(bar);
-    }
-  }
-}
+// function checkScroll() {
+//   // console.log(coordinates);
+//   for (let bar of progressBar) {
+//     var coordinates = bar.getBoundingClientRect();
+//     if (
+//       bar.getAttribute("data-visited") == "false" &&
+//       coordinates.top <= window.innerHeight - coordinates.height
+//     ) {
+//       bar.setAttribute("data-visited", true);
+//       singleBar(bar);
+//     } else if (coordinates.top > window.innerHeight) {
+//       bar.setAttribute("data-visited", false);
+//       initialBar(bar);
+//     }
+//   }
+// }
