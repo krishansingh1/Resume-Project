@@ -139,16 +139,16 @@ function fillBars() {
   }
 }
 
-function checkScroll() {
-  let coordinates = container.getBoundingClientRect();
-  if (!animationDone && coordinates.top <= window.innerHeight) {
-    animationDone = true;
-    fillBars();
-  } else if (coordinates.top > window.innerHeight) {
-    animationDone = false;
-    initialBars();
-  }
-}
+// function checkScroll() {
+//   let coordinates = container.getBoundingClientRect();
+//   if (!animationDone && coordinates.top <= window.innerHeight) {
+//     animationDone = true;
+//     fillBars();
+//   } else if (coordinates.top > window.innerHeight) {
+//     animationDone = false;
+//     initialBars();
+//   }
+// }
 
 function initialBar(bar) {
   bar.setAttribute("data-visited", false);
@@ -172,19 +172,19 @@ function singleBar(bar) {
   }, 5);
 }
 
-// function checkScroll() {
-//   // console.log(coordinates);
-//   for (let bar of progressBar) {
-//     var coordinates = bar.getBoundingClientRect();
-//     if (
-//       bar.getAttribute("data-visited") == "false" &&
-//       coordinates.top <= window.innerHeight - coordinates.height
-//     ) {
-//       bar.setAttribute("data-visited", true);
-//       singleBar(bar);
-//     } else if (coordinates.top > window.innerHeight) {
-//       bar.setAttribute("data-visited", false);
-//       initialBar(bar);
-//     }
-//   }
-// }
+function checkScroll() {
+  // console.log(coordinates);
+  for (let bar of progressBar) {
+    var coordinates = bar.getBoundingClientRect();
+    if (
+      bar.getAttribute("data-visited") == "false" &&
+      coordinates.top <= window.innerHeight - coordinates.height
+    ) {
+      bar.setAttribute("data-visited", true);
+      singleBar(bar);
+    } else if (coordinates.top > window.innerHeight) {
+      bar.setAttribute("data-visited", false);
+      initialBar(bar);
+    }
+  }
+}
