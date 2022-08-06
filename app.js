@@ -139,6 +139,12 @@ function fillBars() {
   }
 }
 
+function singleBars(){
+  for(let bar of progressBar){
+    
+  }
+}
+
 function checkScroll() {
   let coordinates = container.getBoundingClientRect().top;
   if (!animationDone && coordinates <= window.innerHeight) {
